@@ -1,0 +1,13 @@
+apply plugin: 'java-library'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'io.reactivex.rxjava2:rxjava:2.2.0'
+}
+
+sourceCompatibility = "8"
+targetCompatibility = "8"
